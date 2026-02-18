@@ -10,6 +10,7 @@ class VisualiseBooks:
         plt.title("Book Prices")
         plt.xlabel("Books")
         plt.ylabel("Price")
+        plt.savefig("data/book_box_plot.png")
         plt.show()
 
     @staticmethod
@@ -22,6 +23,7 @@ class VisualiseBooks:
         plt.xlabel("Rating")
         plt.ylabel("Count")
         plt.xticks([1, 2, 3, 4, 5])
+        plt.savefig("data/book_bar_chart.png")
         plt.show()
 
     @staticmethod
@@ -31,6 +33,7 @@ class VisualiseBooks:
         plt.title("Price vs Rating")
         plt.xlabel("Price")
         plt.ylabel("Rating")
+        plt.savefig("data/book_scatter_plot.png")
         plt.show()
 
 
@@ -52,6 +55,7 @@ class VisualiseQuotes:
         plt.title("Box Plot of Quote Length")
         plt.xlabel("Quotes")
         plt.ylabel("Number of Characters")
+        plt.savefig("data/quote_box_plot.png")
         plt.show()
 
     @staticmethod
@@ -64,6 +68,7 @@ class VisualiseQuotes:
         plt.xlabel("Author")
         plt.ylabel("Number of Quotes")
         plt.xticks(rotation=45)
+        plt.savefig("data/quote_bar_chart.png")
         plt.show()
 
     @staticmethod
@@ -73,4 +78,5 @@ class VisualiseQuotes:
         plt.title("Quote Length vs Number of Tags")
         plt.xlabel("Quote Length")
         plt.ylabel("Number of Tags")
+        plt.savefig("data/quote_scatter_plot.png")
         plt.show()
