@@ -9,7 +9,7 @@ from utils.print_df_info import print_df_info
 books_path = "data/books.csv"
 quotes_path = "data/quotes.csv"
 
-books = ScrapeBooks.scrape_books_pages(5)
+books = ScrapeBooks.scrape_books_pages(50)
 write_csv(books_path, books)
 
 quotes = ScrapeQuotes.scrape_quotes_pages(10)
